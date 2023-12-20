@@ -1,13 +1,25 @@
 export default function Navbar() {
   return (
     <nav class="nav">
-      <img src="../images/lemon-logo.png" alt="nav-logo" class="nav-logo" />
+      <a href="index.html">
+        <img src="../images/lemon-logo.png" alt="nav-logo" class="nav-logo" />
+      </a>
       <ul class="nav-list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Menu</li>
-        <li>Reservation</li>
-        <li>Order Online</li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Reservation</a>
+        </li>
+        <li>
+          <a href="#">Order Online</a>
+        </li>
       </ul>
       <a href="#" class="button">
         Login

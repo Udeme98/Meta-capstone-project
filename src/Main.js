@@ -3,21 +3,21 @@ export default function Main() {
     <main>
       <section class="hero">
         <div class="hero-left">
-          <h1>Little Lemon</h1>
-          <h3>Chicago</h3>
-          <p>
+          <h1 class="hero-heading">Little Lemon</h1>
+          <h3 class="hero-sub">Chicago</h3>
+          <p class="hero-text">
             lorem ipsum dolor sit amet dolor, consectoe aditey sede elusitiona
             tempor incidenta et laborate magna a liquor
           </p>
-          <a href="#">
-            <button>Reserve A Table</button>
+          <a href="#" class="hero-button">
+            Reserve A Table
           </a>
         </div>
         <div class="hero-right">
-          <img alt="hero-image" />
+          <img src="../images/chef.png" alt="hero-image" class="hero-img" />
         </div>
       </section>
-      <section class="specials">
+      {/* <section class="specials">
         <div class="top">
           <h3>Specials</h3>
           <a href="#">
@@ -88,7 +88,7 @@ export default function Main() {
         <div class="ab-right">
           <img alt="ab-img" />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
