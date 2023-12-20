@@ -1,5 +1,15 @@
-import React from "./react";
-
 export default function Navbar() {
-  return <h3>This a Navbar component</h3>;
+  return (
+    <nav>
+      <img alt="nav-logo" />
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Menu</li>
+        <li>Reservation</li>
+        <li>Order Online</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+  );
 }
