@@ -1,14 +1,13 @@
-import "./App.css";
 import Navbar from "./Navbar";
-import Main from "./Main";
-import Footer from "./Footer";
+// import Main from "./Main";
+// import Footer from "./Footer";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Main />
-      <Footer />
+      {/* <Main />
+      <Footer /> */}
     </>
   );
 }
