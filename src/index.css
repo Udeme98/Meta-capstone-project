@@ -115,6 +115,35 @@ body {
 .specials-top > h3 {
   font-size: 27px;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  margin: 8px;
+  border: thin solid #ccc;
+  border-radius: 5px;
+}
+.card-text {
+  padding: 2px 8px;
+}
+.card-img {
+  height: 300px;
+}
+.specials-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.name-price > h4 {
+  color: #fd5151;
+}
 /* Media Queries */
 @media screen and (min-width: 1024px) {
   .nav-list {
@@ -141,5 +170,16 @@ body {
   .hero-img {
     width: 380px;
     border-radius: 10px;
+  }
+  .card {
+    width: 33.33%;
+    margin: 0;
+  }
+  .specials-down {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0;
+    gap: 10px;
   }
 }

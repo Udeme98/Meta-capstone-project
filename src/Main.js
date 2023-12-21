@@ -26,28 +26,51 @@ export default function Main() {
         </div>
         <div class="specials-down">
           <div class="card">
-            <img src="../images/greek-salad.jpeg" alt="sec-img" />
-            <h3>Greek Salad</h3>
-            <p>
-              lorem artem infin infinito amazil sor paraesin tevez moi madin
-              inferma openma
-            </p>
+            <img
+              src="../images/greek-salad.jpeg"
+              alt="sec-img"
+              class="card-img"
+            />
+            <div class="card-text">
+              <div class="name-price">
+                <h3>Greek Salad</h3>
+                <h4>$12.34</h4>
+              </div>
+              <p>
+                lorem artem infin infinito amazil sor paraesin tevez moi madin
+                inferma openma
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="../images/bruchetta.jpg" alt="sec-img" />
-            <h3>Bruchetta</h3>
-            <p>
-              lorem artem infin infinito amazil sor paraesin tevez moi madin
-              inferma openma
-            </p>
+            <img src="../images/bruchetta.jpg" alt="sec-img" class="card-img" />
+            <div class="card-text">
+              <div class="name-price">
+                <h3>Bruchetta</h3>
+                <h4>$5.99</h4>
+              </div>
+              <p>
+                lorem artem infin infinito amazil sor paraesin tevez moi madin
+                inferma openma
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="../images/lemon-magic.jpg" alt="sec-img" />
-            <h3>Lemon Dessert</h3>
-            <p>
-              lorem artem infin infinito amazil sor paraesin tevez moi madin
-              inferma openma
-            </p>
+            <img
+              src="../images/lemon-magic.jpg"
+              alt="sec-img"
+              class="card-img"
+            />
+            <div class="card-text">
+              <div class="name-price">
+                <h3>Lemon Dessert</h3>
+                <h4>$5.00</h4>
+              </div>
+              <p>
+                lorem artem infin infinito amazil sor paraesin tevez moi madin
+                inferma openma
+              </p>
+            </div>
           </div>
         </div>
       </section>
