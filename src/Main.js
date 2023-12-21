@@ -1,6 +1,7 @@
 export default function Main() {
   return (
     <main>
+      {/* Hero Section */}
       <section class="hero">
         <div class="hero-left">
           <h1 class="hero-heading">Little Lemon</h1>
@@ -17,6 +18,8 @@ export default function Main() {
           <img src="../images/chef.png" alt="hero-image" class="hero-img" />
         </div>
       </section>
+
+      {/* Specials Section*/}
       <section class="specials">
         <div class="specials-top">
           <h3>Specials</h3>
@@ -74,33 +77,46 @@ export default function Main() {
           </div>
         </div>
       </section>
-      {/*<section class="testimonial">
-        <div class="card">
-          <img alt="tes-img" />
-          <h3>Udeme</h3>
-          <p>
-            lorem artem infin infinito amazil sor paraesin tevez moi madin
-            inferma openma
-          </p>
+
+      {/* Testimonials */}
+      <section class="testimonial">
+        <div class="tes-top">
+          <h2>Testimonials</h2>
         </div>
-        <div class="card">
-          <img alt="tes-img" />
-          <h3>Udeme</h3>
-          <p>
-            lorem artem infin infinito amazil sor paraesin tevez moi madin
-            inferma openma
-          </p>
-        </div>
-        <div class="card">
-          <img alt="tes-img" />
-          <h3>Udeme</h3>
-          <p>
-            lorem artem infin infinito amazil sor paraesin tevez moi madin
-            inferma openma
-          </p>
+        <div class="tes-down">
+          <div class="tes-card">
+            <img src="../images/-l4j9q.jpg" alt="tes-img" class="tes-img" />
+            <div class="tes-text">
+              <h3>Udeme</h3>
+              <p>
+                lorem artem infin infinito amazil sor paraesin tevez moi madin
+                inferma openma
+              </p>
+            </div>
+          </div>
+          <div class="tes-card">
+            <img src="../images/woman.jpeg" alt="tes-img" class="tes-img" />
+            <div class="tes-text">
+              <h3>Jane</h3>
+              <p>
+                lorem artem infin infinito amazil sor paraesin tevez moi madin
+                inferma openma
+              </p>
+            </div>
+          </div>
+          <div class="tes-card">
+            <img src="../images/man.jpeg" alt="tes-img" class="tes-img" />
+            <div class="tes-text">
+              <h3>John</h3>
+              <p>
+                lorem artem infin infinito amazil sor paraesin tevez moi madin
+                inferma openma
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="about">
+      {/*<section class="about">
         <div class="ab-left">
           <h1>Little Lemon</h1>
           <p>

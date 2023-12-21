@@ -118,7 +118,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 380px;
   height: auto;
   margin: 8px;
   border: thin solid #ccc;
@@ -144,6 +144,50 @@ body {
 .name-price > h4 {
   color: #fd5151;
 }
+
+/*Testimonials section*/
+.testimonial {
+  background-color: #495e57;
+  padding: 5px 30px;
+}
+.tes-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  margin: 8px;
+  /* border: thin solid #5d756d;
+  border-radius: 5px; */
+}
+.tes-text {
+  /* padding: 2px 8px; */
+  color: #ebe7e7;
+}
+.tes-text > p {
+  font-weight: 300;
+  font-size: small;
+}
+.tes-text > h3 {
+  margin: 5px 0 8px;
+}
+.tes-top {
+  margin: 20px 0 30px;
+}
+.tes-top > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+.tes-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tes-img {
+  height: 250px;
+  border-radius: 5px;
+}
+
 /* Media Queries */
 @media screen and (min-width: 1024px) {
   .nav-list {
@@ -165,7 +209,7 @@ body {
   }
   .hero-right {
     flex: 1;
-    text-align: center;
+    text-align: right;
   }
   .hero-img {
     width: 380px;
@@ -181,5 +225,16 @@ body {
     justify-content: space-between;
     padding: 0;
     gap: 10px;
+  }
+  .tes-card {
+    width: 25%;
+    margin: 0;
+  }
+  .tes-down {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    padding: 0;
+    /* gap: 10px; */
   }
 }
