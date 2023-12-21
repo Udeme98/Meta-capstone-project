@@ -17,16 +17,16 @@ export default function Main() {
           <img src="../images/chef.png" alt="hero-image" class="hero-img" />
         </div>
       </section>
-      {/* <section class="specials">
-        <div class="top">
+      <section class="specials">
+        <div class="specials-top">
           <h3>Specials</h3>
-          <a href="#">
-            <button>Online Menu</button>
+          <a href="#" class="specials-button">
+            Online Menu
           </a>
         </div>
-        <div class="down">
+        <div class="specials-down">
           <div class="card">
-            <img alt="sec-img" />
+            <img src="../images/greek-salad.jpeg" alt="sec-img" />
             <h3>Greek Salad</h3>
             <p>
               lorem artem infin infinito amazil sor paraesin tevez moi madin
@@ -34,16 +34,16 @@ export default function Main() {
             </p>
           </div>
           <div class="card">
-            <img alt="sec-img" />
-            <h3>Greek Salad</h3>
+            <img src="../images/bruchetta.jpg" alt="sec-img" />
+            <h3>Bruchetta</h3>
             <p>
               lorem artem infin infinito amazil sor paraesin tevez moi madin
               inferma openma
             </p>
           </div>
           <div class="card">
-            <img alt="sec-img" />
-            <h3>Greek Salad</h3>
+            <img src="../images/lemon-magic.jpg" alt="sec-img" />
+            <h3>Lemon Dessert</h3>
             <p>
               lorem artem infin infinito amazil sor paraesin tevez moi madin
               inferma openma
@@ -51,7 +51,7 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <section class="testimonial">
+      {/*<section class="testimonial">
         <div class="card">
           <img alt="tes-img" />
           <h3>Udeme</h3>

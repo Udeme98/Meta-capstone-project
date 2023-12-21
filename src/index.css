@@ -11,7 +11,7 @@ body {
 /* Navbar */
 .nav {
   display: flex;
-  height: 112px;
+  height: 100px;
   align-items: center;
   padding: 5px 12px;
   text-transform: uppercase;
@@ -87,6 +87,34 @@ body {
   background-color: #967d03;
 }
 
+/* Specials section */
+.specials {
+  background-color: #fff;
+  padding: 5px 30px;
+}
+.specials-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #f4ce14;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0 20px;
+}
+.specials-button:hover {
+  background-color: #967d03;
+}
+.specials-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.specials-top > h3 {
+  font-size: 27px;
+}
 /* Media Queries */
 @media screen and (min-width: 1024px) {
   .nav-list {
