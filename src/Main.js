@@ -116,18 +116,28 @@ export default function Main() {
           </div>
         </div>
       </section>
-      {/*<section class="about">
-        <div class="ab-left">
-          <h1>Little Lemon</h1>
-          <p>
-            lorem ipsum dolor sit amet dolor, consectoe aditey sede elusitiona
-            tempor incidenta et laborate magna a liquor
-          </p>
+
+      {/* About section  */}
+      <section class="about">
+        <div class="ab-title">
+          <h2>About</h2>
         </div>
-        <div class="ab-right">
-          <img alt="ab-img" />
+        <div class="about-info">
+          <div class="ab-left">
+            <h1 class="ab-heading">Little Lemon</h1>
+            <p class="ab-text">
+              lorem ipsum dolor sit amet dolor, consectoe aditey sede elusitiona
+              tempor incidenta et laborate magna a liquor lorem ipsum dolor sit
+              amet dolor, consectoe aditey sede elusitiona tempor incidenta et
+              laborate magna a liquor
+            </p>
+          </div>
+          <div class="ab-right">
+            <img src="../images/food2.jpg" alt="ab-img" class="ab-img img-1" />
+            <img src="../images/chef3.jpg" alt="ab-img" class="ab-img img-2" />
+          </div>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
