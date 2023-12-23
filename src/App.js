@@ -1,14 +1,13 @@
-import Navbar from "./Navbar";
-import Main from "./Main";
-import Footer from "./Footer";
+import Home from "./Home";
+import Reservation from "./Reservation";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Main />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/reservation" element={<Reservation />} />
+    </Routes>
   );
 }
 

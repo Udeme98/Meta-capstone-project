@@ -279,6 +279,7 @@ body {
 .f-t {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 /* Media Queries */

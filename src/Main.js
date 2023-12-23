@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Main() {
   return (
     <main>
@@ -10,12 +12,12 @@ export default function Main() {
             lorem ipsum dolor sit amet dolor, consectoe aditey sede elusitiona
             tempor incidenta et laborate magna a liquor
           </p>
-          <a href="#" class="hero-button">
+          <Link to="/reservation" class="hero-button">
             Reserve A Table
-          </a>
+          </Link>
         </div>
         <div class="hero-right">
-          <img src="../images/chef.png" alt="hero-image" class="hero-img" />
+          <img src="../images/chef.png" alt="hero-img" class="hero-img" />
         </div>
       </section>
 
@@ -23,9 +25,9 @@ export default function Main() {
       <section class="specials">
         <div class="specials-top">
           <h3>Specials</h3>
-          <a href="#" class="specials-button">
+          <Link to="/menu" class="specials-button">
             Online Menu
-          </a>
+          </Link>
         </div>
         <div class="specials-down">
           <div class="card">
