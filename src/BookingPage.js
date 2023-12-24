@@ -1,12 +1,6 @@
 import Navbar from "./Navbar";
-// import Footer from "./Footer";
 
 export default function BookingForm() {
-  // const styles = {
-  //   display: "grid",
-  //   maxWidth: "200px",
-  //   gap: "20px",
-  // };
   return (
     <>
       <Navbar />
