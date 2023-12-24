@@ -17,7 +17,7 @@ export default function Navbar() {
           <Link to="/menu">Menu</Link>
         </li>
         <li>
-          <Link to="/reservation">Reservation</Link>
+          <Link to="/booking">Reservation</Link>
         </li>
         <li>
           <Link to="/order">Order Online</Link>

@@ -282,6 +282,55 @@ body {
   cursor: pointer;
 }
 
+/* Booking Form */
+.form-page {
+  background-color: #495e57;
+  height: 482px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-form {
+  /* margin: 20px 0; */
+  background-color: #495e57;
+  /* margin: 0 auto; */
+  width: 400px;
+  padding: 50px;
+  border: 1px solid #9be7ce;
+  border-radius: 8px;
+  color: #fff;
+}
+label {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+input,
+select {
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 5px;
+  height: 23px;
+}
+.book-btn {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #f4ce14;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0 20px;
+}
+.book-btn:hover {
+  background-color: #967d03;
+}
+
 /* Media Queries */
 @media screen and (min-width: 1024px) {
   .nav-list {

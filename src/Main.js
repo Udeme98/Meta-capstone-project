@@ -12,7 +12,7 @@ export default function Main() {
             lorem ipsum dolor sit amet dolor, consectoe aditey sede elusitiona
             tempor incidenta et laborate magna a liquor
           </p>
-          <Link to="/reservation" class="hero-button">
+          <Link to="/booking" class="hero-button">
             Reserve A Table
           </Link>
         </div>
