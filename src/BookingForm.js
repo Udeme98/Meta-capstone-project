@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 export default function BookingForm() {
+  const [selectDate, setSelectDate] = useState("");
   const [formData, setFormData] = useState({
     date: "",
-    time: "",
     guest: "",
     occasion: "",
   });
@@ -16,8 +16,15 @@ export default function BookingForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
+    console.log(selectDate);
   }
+
+  const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00"];
+
+  const datesList = availableTimes.map((time) => {
+    return <option value={time}>{time}</option>;
+  });
+
   return (
     <>
       <div className="form-page">
@@ -35,15 +42,10 @@ export default function BookingForm() {
           <select
             id="res-time"
             name="time"
-            value={formData.time}
-            onChange={handleChange}
+            value={selectDate}
+            onChange={(e) => setSelectDate(e.target.value)}
           >
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
+            {datesList}
           </select>
           <br />
           <label htmlFor="guests">Number of guests:</label>
