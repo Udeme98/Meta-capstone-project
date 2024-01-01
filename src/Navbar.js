@@ -24,7 +24,7 @@ export default function Navbar() {
         </li>
       </ul>
       <Link to="/login" class="button">
-        Login
+        Log In
       </Link>
     </nav>
   );
