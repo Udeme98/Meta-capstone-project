@@ -1,27 +1,27 @@
 import { useState } from "react";
 
 export default function BookingForm({ availableTimes, dispatchTimes }) {
-  const [selectDate, setSelectDate] = useState("");
-  const [formData, setFormData] = useState({
-    date: "",
-    guest: "",
-    occasion: "",
-  });
+  // const [selectDate, setSelectDate] = useState("");
+  // const [formData, setFormData] = useState({
+  //   date: "",
+  //   guest: "",
+  //   occasion: "",
+  // });
 
-  function handleChange(event) {
-    setFormData((prevData) => {
-      return { ...prevData, [event.target.name]: event.target.value };
-    });
-  }
+  // function handleChange(event) {
+  //   setFormData((prevData) => {
+  //     return { ...prevData, [event.target.name]: event.target.value };
+  //   });
+  // }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log(selectDate);
-  }
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+  //   console.log(selectDate);
+  // }
 
-  const datesList = availableTimes.map((time) => {
-    return <option value={time}>{time}</option>;
-  });
+  // const datesList = availableTimes.map((time) => {
+  //   return <option value={time}>{time}</option>;
+  // });
 
   return (
     <>
