@@ -9,9 +9,7 @@ export default function BookingForm() {
           <input type="date" id="res-date" name="date" />
           <br />
           <label htmlFor="res-time">Choose time:</label>
-          {/* <select id="res-time" name="time">
-            {datesList}
-          </select> */}
+          <select id="res-time" name="time"></select>
           <br />
           <label htmlFor="guests">Number of guests:</label>
           <input
