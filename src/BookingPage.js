@@ -1,4 +1,3 @@
-import { useEffect, useReducer } from "react";
 import BookingForm from "./BookingForm";
 import Navbar from "./Navbar";
 
