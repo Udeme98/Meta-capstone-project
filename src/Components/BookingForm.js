@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export default function BookingForm() {
+  function handleChange() {}
   return (
     <>
       <div className="form-page">
