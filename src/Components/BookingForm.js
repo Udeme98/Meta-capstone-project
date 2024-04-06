@@ -6,7 +6,7 @@ export default function BookingForm() {
       <div className="form-page">
         <form className="book-form">
           <label htmlFor="res-date">Choose date:</label>
-          <input type="date" id="res-date" name="date" />
+          <input type="date" id="res-date" name="date" value="" />
           <br />
           <label htmlFor="res-time">Choose time:</label>
           <select id="res-time" name="time"></select>
