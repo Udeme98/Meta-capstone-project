@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer class="footer">
-      <img src="../images/foot-logo.png" alt="foot-logo" class="foot-img" />
+      <img src="../images/foot-logo.png" alt="foot-logo" className="foot-img" />
 
       <ul class="links">
         <h4 class="foot-sub">Links</h4>
@@ -23,15 +23,15 @@ export default function Footer() {
           <Link to="/order">Order Online</Link>
         </li>
       </ul>
-      <ul class="contacts">
-        <h4 class="foot-sub">Contacts</h4>
+      <ul className="contacts">
+        <h4 className="foot-sub">Contacts</h4>
         <li>12 Blossom Avenue</li>
         <li>+20947352</li>
         <li>Dalemon@lemon.com</li>
       </ul>
-      <ul class="socials">
-        <h4 class="foot-sub">Socials</h4>
-        <div class="f-t">
+      <ul className="socials">
+        <h4 className="foot-sub">Socials</h4>
+        <div className="f-t">
           <li>
             <img src="../images/icon-facebook.svg" alt="facebook-icon" />
           </li>
@@ -40,7 +40,7 @@ export default function Footer() {
           </li>
         </div>
       </ul>
-      <h5 class="foot-text">Copyright &copy; 2023, All Rights Reserved.</h5>
+      <h5 className="foot-text">Copyright &copy; 2023, All Rights Reserved.</h5>
     </footer>
   );
 }

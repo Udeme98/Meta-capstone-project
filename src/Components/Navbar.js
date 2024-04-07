@@ -2,11 +2,15 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav class="nav">
+    <nav className="nav">
       <Link to="/">
-        <img src="../images/lemon-logo.png" alt="nav-logo" class="nav-logo" />
+        <img
+          src="../images/lemon-logo.png"
+          alt="nav-logo"
+          className="nav-logo"
+        />
       </Link>
-      <ul class="nav-list">
+      <ul className="nav-list">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -23,7 +27,7 @@ export default function Navbar() {
           <Link to="/order">Order Online</Link>
         </li>
       </ul>
-      <Link to="/login" class="button">
+      <Link to="/login" className="button">
         Login
       </Link>
     </nav>
