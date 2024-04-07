@@ -10,7 +10,14 @@ export default function BookingForm() {
           <input type="date" id="res-date" name="date" value="" />
           <br />
           <label htmlFor="res-time">Choose time:</label>
-          <select id="res-time" name="time"></select>
+          <select id="res-time" name="time">
+            <option>17:00</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+            <option>21:00</option>
+            <option>22:00</option>
+          </select>
           <br />
           <label htmlFor="guests">Number of guests:</label>
           <input
