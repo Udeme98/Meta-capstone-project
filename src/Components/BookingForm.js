@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-export default function BookingForm() {
-  const timeArray = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-
-  const [availableTimes, setAvailableTimes] = useState("");
+export default function BookingForm({
+  availableTimes,
+  timeArray,
+  setAvailableTimes,
+}) {
   const [availableDate, setAvailableDate] = useState("");
   const [guest, setGuest] = useState("");
   const [occasion, setOccasion] = useState("");
