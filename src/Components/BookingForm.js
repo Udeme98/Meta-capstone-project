@@ -1,28 +1,25 @@
 import { useState } from "react";
 
 export default function BookingForm() {
+  const timeArray = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+
+  const [availableTimes, setAvailableTimes] = useState("");
   const [availableDate, setAvailableDate] = useState("");
   const [guest, setGuest] = useState("");
   const [occasion, setOccasion] = useState("");
-  const [availableTimes, setAvailableTimes] = useState([
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ]);
 
-  const times = availableTimes.map((availableTime) => {
-    return <option key={availableDate}>{availableTime}</option>;
-  });
-
-  // console.log(dates);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(availableDate);
+    console.log(availableTimes);
+    console.log(guest);
+    console.log(occasion);
+  };
 
   return (
     <>
       <div className="form-page">
-        <form className="book-form">
+        <form className="book-form" onSubmit={handleSubmit}>
           <label htmlFor="res-date">Choose date:</label>
           <input
             type="date"
@@ -32,6 +29,7 @@ export default function BookingForm() {
             onChange={(e) => setAvailableDate(e.target.value)}
           />
           <br />
+
           <label htmlFor="res-time">Choose time:</label>
           <select
             id="res-time"
@@ -39,7 +37,9 @@ export default function BookingForm() {
             value={availableTimes}
             onChange={(e) => setAvailableTimes(e.target.value)}
           >
-            {times}
+            {timeArray.map((time) => (
+              <option key={time}>{time}</option>
+            ))}
           </select>
           <br />
           <label htmlFor="guests">Number of guests:</label>
