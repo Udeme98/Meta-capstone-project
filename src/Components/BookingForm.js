@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export default function BookingForm() {
   const [availableDate, setAvailableDate] = useState("");
+  const [guest, setGuest] = useState("");
+  const [occasion, setOccasion] = useState("");
   const [availableTimes, setAvailableTimes] = useState([
     "17:00",
     "18:00",
@@ -48,10 +50,17 @@ export default function BookingForm() {
             max="10"
             id="guests"
             name="guest"
+            value={guest}
+            onChange={(e) => setGuest(e.target.value)}
           />
           <br />
           <label htmlFor="occasion">Occasion: </label>
-          <select id="occasion" name="occasion">
+          <select
+            id="occasion"
+            name="occasion"
+            value={occasion}
+            onChange={(e) => setOccasion(e.target.value)}
+          >
             <option>Birthday</option>
             <option>Anniversary</option>
           </select>
