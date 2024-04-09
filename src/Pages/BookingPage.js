@@ -16,9 +16,9 @@ export default function BookingPage() {
     <>
       <Navbar />
       <BookingForm
-      // availableTimes={availableTimes}
-      // timeArray={timeArray}
-      // setAvailableTimes={setAvailableTimes}
+        availableTimes={availableTimes}
+        // timeArray={timeArray}
+        // setAvailableTimes={setAvailableTimes}
       />
     </>
   );
