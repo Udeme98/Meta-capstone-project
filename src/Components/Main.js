@@ -1,7 +1,7 @@
 import { useReducer } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./Header";
-import BookingPage from "./BookingPage";
+import BookingPage from "./Booking";
 import ConfirmedBooking from "./ConfirmedBooking";
 
 export default function Main() {
@@ -36,7 +36,7 @@ export default function Main() {
   const [state, dispatch] = useReducer(updateTimes, initialState);
 
   function updateTimes(state, date) {
-    return { availableTimes: fetchAPI(new Date()) };
+    return { availableTimes: fetchAPI(new Date(date)) };
   }
 
   const navigate = useNavigate();

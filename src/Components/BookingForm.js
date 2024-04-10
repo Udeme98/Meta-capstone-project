@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Main from "./Main";
-import BookingPage from "./BookingPage";
 
 export default function BookingForm(props) {
   const [date, setDate] = useState("");
@@ -10,7 +8,7 @@ export default function BookingForm(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.SubmitForm(e);
+    props.submitForm(e);
   };
 
   const handleChange = (e) => {
@@ -21,8 +19,8 @@ export default function BookingForm(props) {
   return (
     <>
       {/* Booking Form */}
-      <div className="form-page" onSubmit={handleSubmit}>
-        <form className="book-form">
+      <div className="form-page">
+        <form className="book-form" onSubmit={handleSubmit}>
           {/* Date selection */}
           <label htmlFor="res-date">Choose date:</label>
           <input
