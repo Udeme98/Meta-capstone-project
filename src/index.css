@@ -331,6 +331,10 @@ select {
   background-color: #967d03;
 }
 
+.confirm {
+  padding: 10px 13%;
+}
+
 /* Media Queries */
 @media screen and (min-width: 1024px) {
   .nav-list {
