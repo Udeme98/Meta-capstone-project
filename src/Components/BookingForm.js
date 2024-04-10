@@ -1,48 +1,53 @@
 import { useState } from "react";
 
-export default function BookingForm({
-  availableTimes,
-  timeArray,
-  setAvailableTimes,
-}) {
-  const [availableDate, setAvailableDate] = useState("");
-  const [guest, setGuest] = useState("");
+export default function BookingForm() {
+  const [date, setDate] = useState("");
+  const [times, setTimes] = useState("");
+  const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(availableDate);
-    console.log(availableTimes);
-    console.log(guest);
-    console.log(occasion);
+    props.SubmitForm(e);
+  };
+
+  const handleChange = (e) => {
+    setDate(e);
+    props.dispatch(e);
   };
 
   return (
     <>
-      <div className="form-page">
-        <form className="book-form" onSubmit={handleSubmit}>
+      {/* Booking Form */}
+      <div className="form-page" onSubmit={handleSubmit}>
+        <form className="book-form">
+          {/* Date selection */}
           <label htmlFor="res-date">Choose date:</label>
           <input
             type="date"
             id="res-date"
             name="date"
-            value={availableDate}
-            onChange={(e) => setAvailableDate(e.target.value)}
+            value={date}
+            onChange={(e) => handleChange(e.target.value)}
           />
           <br />
 
+          {/* Time selection */}
           <label htmlFor="res-time">Choose time:</label>
           <select
             id="res-time"
             name="time"
-            value={availableTimes}
-            onChange={(e) => setAvailableTimes(e.target.value)}
+            value={times}
+            onChange={(e) => setTimes(e.target.value)}
           >
-            {timeArray.map((time) => (
-              <option key={time}>{time}</option>
-            ))}
+            <option value="">Select a Time</option>
+            {props.availableTimes.availableTimes.map((availableTimes) => {
+              return <option key={availableTimes}>{availableTimes}</option>;
+            })}
           </select>
           <br />
+
+          {/* Number of guest */}
           <label htmlFor="guests">Number of guests:</label>
           <input
             type="number"
@@ -51,15 +56,18 @@ export default function BookingForm({
             max="10"
             id="guests"
             name="guest"
-            value={guest}
-            onChange={(e) => setGuest(e.target.value)}
+            value={guests}
+            onChange={(e) => setGuests(e.target.value)}
           />
           <br />
+
+          {/* Occasion selection */}
           <label htmlFor="occasion">Occasion: </label>
           <select
             id="occasion"
             name="occasion"
             value={occasion}
+            key={occasion}
             onChange={(e) => setOccasion(e.target.value)}
           >
             <option>Birthday</option>
@@ -67,6 +75,8 @@ export default function BookingForm({
           </select>
           <br />
           <br />
+
+          {/* submit button */}
           <button className="book-btn">Make Your reservation</button>
         </form>
       </div>
