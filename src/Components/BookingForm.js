@@ -1,6 +1,8 @@
 import { useState } from "react";
+import Main from "./Main";
+import BookingPage from "./BookingPage";
 
-export default function BookingForm() {
+export default function BookingForm(props) {
   const [date, setDate] = useState("");
   const [times, setTimes] = useState("");
   const [guests, setGuests] = useState("");
