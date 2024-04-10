@@ -29,6 +29,7 @@ export default function BookingForm(props) {
             name="date"
             value={date}
             onChange={(e) => handleChange(e.target.value)}
+            required
           />
           <br />
 
@@ -39,6 +40,7 @@ export default function BookingForm(props) {
             name="time"
             value={times}
             onChange={(e) => setTimes(e.target.value)}
+            required
           >
             <option value="">Select a Time</option>
             {props.availableTimes.availableTimes.map((availableTimes) => {
@@ -58,6 +60,7 @@ export default function BookingForm(props) {
             name="guest"
             value={guests}
             onChange={(e) => setGuests(e.target.value)}
+            required
           />
           <br />
 
@@ -69,6 +72,7 @@ export default function BookingForm(props) {
             value={occasion}
             key={occasion}
             onChange={(e) => setOccasion(e.target.value)}
+            required
           >
             <option>Birthday</option>
             <option>Anniversary</option>
