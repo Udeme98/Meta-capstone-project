@@ -15,11 +15,11 @@ export default function BookingPage() {
   return (
     <>
       <Navbar />
-      <BookingForm
+      {/* <BookingForm
         availableTimes={availableTimes}
         // timeArray={timeArray}
         // setAvailableTimes={setAvailableTimes}
-      />
+      /> */}
     </>
   );
 }
