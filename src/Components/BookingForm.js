@@ -29,7 +29,7 @@ export default function BookingForm(props) {
             name="date"
             value={date}
             onChange={(e) => handleChange(e.target.value)}
-            required
+            aria-required="true"
           />
           <br />
 
