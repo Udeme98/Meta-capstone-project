@@ -332,6 +332,7 @@ select {
 }
 .book-btn:disabled {
   cursor: not-allowed;
+  background-color: hsl(50, 91%, 20%);
 }
 
 .confirm {
