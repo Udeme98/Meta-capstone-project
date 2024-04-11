@@ -330,6 +330,9 @@ select {
 .book-btn:hover {
   background-color: #967d03;
 }
+.book-btn:disabled {
+  cursor: not-allowed;
+}
 
 .confirm {
   padding: 10px 13%;
