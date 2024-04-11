@@ -81,7 +81,9 @@ export default function BookingForm(props) {
           <br />
 
           {/* submit button */}
-          <button className="book-btn">Make Your reservation</button>
+          <button className="book-btn" disabled={!date}>
+            Make Your reservation
+          </button>
         </form>
       </div>
     </>
